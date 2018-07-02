@@ -6,7 +6,9 @@
   "scripts": {
     "start": "babel-node src/server/app.js",
     "prestart": "webpack --mode development",
-    "test": "jest --config=jest.json"
+    "test": "jest --config=jest.json",
+    "precommit": "npm run lint && npm run test",
+    "lint": "eslint --config .eslintrc.json --fix ./src/client"
   },
   "repository": {
     "type": "git",
