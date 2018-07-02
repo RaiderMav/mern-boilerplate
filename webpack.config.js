@@ -1,5 +1,5 @@
 const path = require('path'),
-    entryFile = path.resolve(__dirname, 'src', 'client', 'app.js'),
+    entryFile = path.resolve(__dirname, 'src', 'client', 'index.js'),
     outputDir = path.resolve(__dirname, 'public')
 
 module.exports = {
@@ -16,7 +16,7 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.(scss|css)$/,
+                test: /\.(css|scss)$/,
                 use: [{
                     loader: 'style-loader'
                 }, {

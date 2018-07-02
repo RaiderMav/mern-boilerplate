@@ -1,12 +1,8 @@
 import React, { Component } from 'react'
-import { render } from 'react-dom'
-import Styles from './app.scss'
+import './app.scss'
 
-class App extends Component {
+export default class App extends Component {
     render() {
-        return (
-            <h1>Hello from React!</h1>
-        )
+        return (<h1>Hello from React!</h1>)
     }
 }
-render(<App />, document.getElementById('root'))
